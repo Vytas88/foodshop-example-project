@@ -6,17 +6,6 @@ import { Loader } from "../../components";
 import { usePrevious } from "../../hooks";
 import shop from "../../../shop";
 
-function usePrevious(value) {
-  const ref = useRef();
-  useEffect(
-    () => {
-      ref.current = value;
-    },
-    [value]
-  );
-  return ref.current;
-}
-
 function SingleProduct({ history, product, isLoading, error }) {
   const prevLoading = usePrevious(isLoading);
   useEffect(
