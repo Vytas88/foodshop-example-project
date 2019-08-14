@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 // import { withBackgroundColor } from "../BackgroundContext";
 import BackgroundContext from "../BackgroundContext";
-import shopContext from "../ShopContext";
-import { ShopContext } from "..";
+import ShopContext from "../ShopContext";
+// import { ShopContext } from "..";
 
 function ProductCard({
   name,
